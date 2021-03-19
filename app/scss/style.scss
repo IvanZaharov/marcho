@@ -88,7 +88,121 @@
     justify-content: center;
     align-items: center;
   }
+}
 
+.footer {
+  background-color: #f6f6f6;
+}
+
+.footer-top {
+  padding: 70px 0 40px;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+
+  &__contact {
+    max-width: 260px;
+    margin-right: 40px;
+  }
+
+  &__nav {
+    max-width: 170px;
+    width: 100%;
+    margin-right: 30px;
+  }
+
+  &__item-form {
+    max-width: 470px;
+  }
+
+  &__logo {
+    margin-bottom: 24px;
+    display: block;
+  }
+
+  &__address,
+  &__email,
+  &__phone {
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  &__social {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+    path {
+      fill: $default;
+      transition: fill 0.3s;
+    }
+    &:hover {
+      path {
+        fill: $accent;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 34px;
+    font-size: 22px;
+    @extend %roboto-400;
+    color: $title;
+    line-height: 1;
+  }
+
+  &__link {
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+  }
+
+  &__input {
+    max-width: 320px;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    padding: 12px 10px 12px 15px;
+    box-shadow: 0 7px 20px 0 rgba(141, 141, 141, 0.3);
+    margin-right: 5px;
+    &::placeholder {
+      font-size: 16px;
+      color: $default;
+    }
+  }
+
+  &__btn {
+    padding: 12px 20px;
+    background-color: $accent;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    @extend %roboto-400;
+    box-shadow: 0 7px 20px 0 rgba(254, 62, 87, 0.3);
+    cursor: pointer;
+    max-width: 140px;
+    width: 100%;
+  }
+}
+
+.footer-bottom {
+  height: 74px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__img {
+    display: inline;
+    vertical-align: middle;
+    margin-left: 25px;
+  }
 }
 
 
